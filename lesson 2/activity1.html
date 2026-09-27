@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>A function can access variables defined inside the function</p>
+    <button type="button" onclick="Adition()">add</button>
+    <button type="button" onclick="subraction()">sub</button>
+    <button type="button" onclick="multimlcation()">mul</button>
+    <button type="button" onclick="division()">div</button>
+    <p id="demo"></p>
+    <p id="demo"></p>
+    <p id="demo"></p>
+    <p id="demo"></p>
+    <script>
+        var b = 6;
+        function Adition() {
+            var a = 7; 
+            document.getElementById("demo").innerHTML =b + a;
+        }
+        function subraction() {
+            var c = 45;
+            document.getElementById("demo").innerHTML= c - b;
+        }
+        function multimlcation() {
+            var d = 76;
+            document.getElementById("demo").innerHTML= d * b;
+        }
+        function division() {
+            var e =456;
+            document.getElementById("demo").innerHTML= e / b;
+        }
+    </script>
+</body>
+</html>
